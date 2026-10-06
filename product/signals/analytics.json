@@ -1,0 +1,37 @@
+{
+    "period": "last_30_days",
+    "new_accounts": 1000,
+    "funnel": {
+      "account_created": 1000,
+      "workspace_created": 810,
+      "ad_connection_started": 720,
+      "ad_connection_completed": 438,
+      "campaign_created": 351,
+      "campaign_launched": 302
+    },
+    "segments": {
+      "small_agency": {
+        "accounts": 720,
+        "ad_connection_started": 531,
+        "ad_connection_completed": 287,
+        "campaign_launched": 181
+      },
+      "medium_agency": {
+        "accounts": 280,
+        "ad_connection_started": 189,
+        "ad_connection_completed": 151,
+        "campaign_launched": 121
+      }
+    },
+    "median_time_minutes": {
+      "account_to_workspace": 4,
+      "workspace_to_connection_start": 7,
+      "connection_start_to_complete": 31,
+      "connection_complete_to_campaign_created": 12,
+      "campaign_created_to_launch": 9
+    },
+    "notes": [
+      "Analytics shows where users drop off but does not establish why.",
+      "No experiment has yet been run on onboarding."
+    ]
+  }
