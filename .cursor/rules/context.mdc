@@ -26,3 +26,21 @@ Use:
 When a downstream task depends on an upstream artifact, consume the smallest authoritative artifact that preserves the required information.
 
 Retrieve deeper evidence only when verification or ambiguity requires it.
+
+# Product Memory Write Policy
+
+product/memory/ is accepted knowledge, not working state.
+
+Agents may read product memory.
+
+Agents MUST NOT write a new decision to
+product/memory/decisions.md without explicit human approval
+in the current interaction.
+
+Agents MUST NOT write to
+product/memory/learnings.md unless the learning is supported
+by completed experiment evidence or explicitly accepted
+historical evidence.
+
+Proposals, hypotheses, recommendations and critic verdicts
+belong outside product/memory/.

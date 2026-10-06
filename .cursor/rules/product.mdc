@@ -24,3 +24,35 @@ Do not begin behavior-changing implementation from a pending or rejected product
 Prefer reducing important uncertainty before committing expensive engineering resources.
 
 AI is a solution option, not a default requirement.
+
+# Human Decision Authority
+
+Only the human user may approve a product decision.
+
+An agent MUST NEVER infer approval from:
+- the user's original request;
+- permission to investigate;
+- permission to recommend;
+- previous agent output;
+- absence of objection;
+- a completed analysis;
+- a recommendation from another agent.
+
+Words such as:
+- APPROVED
+- ACCEPTED
+- DECIDED
+- COMMITTED
+
+may only be applied to a product decision after an explicit
+human message approving that specific decision.
+
+Before explicit human approval:
+
+- status MUST remain PROPOSED or PENDING HUMAN DECISION;
+- do not create a decision entry in product/memory/decisions.md;
+- do not claim approval by the Product Owner;
+- do not proceed into Spec-Driven Delivery.
+
+When a product recommendation is ready, STOP and ask the human
+to APPROVE, MODIFY, or REJECT it.
