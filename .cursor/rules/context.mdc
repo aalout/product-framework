@@ -1,0 +1,28 @@
+---
+description: Context management and artifact boundaries
+alwaysApply: true
+---
+
+# Context Management
+
+Use the minimum context necessary for the current task.
+
+Prefer canonical artifacts over replaying full historical context.
+
+Do not read all raw product signals when an approved analysis artifact provides sufficient context.
+
+Raw evidence remains available for audit and verification.
+
+Do not treat chat history as durable project memory.
+
+Use:
+
+- product/signals/ for raw product evidence;
+- product/analysis/ for derived research;
+- product/memory/ for accepted product knowledge;
+- openspec/ for approved specification and change history;
+- source code for implementation state.
+
+When a downstream task depends on an upstream artifact, consume the smallest authoritative artifact that preserves the required information.
+
+Retrieve deeper evidence only when verification or ambiguity requires it.

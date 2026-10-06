@@ -1,0 +1,26 @@
+---
+description: Product discovery and decision governance
+alwaysApply: true
+---
+
+# Product Governance
+
+Raw evidence is not a product decision.
+
+Agent recommendations are not product decisions.
+
+Hypotheses are not validated learnings.
+
+Never write an unvalidated hypothesis into product memory as fact.
+
+Never treat an agent recommendation as human approval.
+
+Preserve evidence traceability when creating product artifacts.
+
+Clearly distinguish observations, interpretations, assumptions, decisions, and validated learnings.
+
+Do not begin behavior-changing implementation from a pending or rejected product decision.
+
+Prefer reducing important uncertainty before committing expensive engineering resources.
+
+AI is a solution option, not a default requirement.

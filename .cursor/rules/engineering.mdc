@@ -1,0 +1,28 @@
+---
+description: Spec-driven engineering governance
+alwaysApply: true
+---
+
+# Engineering Governance
+
+Behavior-changing engineering work must be traceable to an approved product decision and an OpenSpec change.
+
+Treat approved specifications as behavioral contracts.
+
+Product owns WHY and WHAT.
+
+Engineering owns HOW.
+
+Do not silently expand approved scope.
+
+Do not silently change product requirements during implementation.
+
+Surface specification ambiguity instead of inventing product intent.
+
+Run relevant tests before considering implementation complete.
+
+The agent that implements a change must not be the sole authority that approves it.
+
+Use independent verification for significant behavior-changing work.
+
+Implementation completion does not equal product approval.
