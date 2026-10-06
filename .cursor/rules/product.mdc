@@ -56,3 +56,23 @@ Before explicit human approval:
 
 When a product recommendation is ready, STOP and ask the human
 to APPROVE, MODIFY, or REJECT it.
+
+# Evidence Grounding
+
+Product artifacts must not introduce product-specific facts,
+entities, features, integrations, user flows, segments, metrics,
+or system behavior that are absent from the available evidence
+or accepted product memory.
+
+General domain knowledge may be used to generate hypotheses,
+but it MUST be explicitly labeled as an external assumption
+and must not be written as an existing product fact.
+
+Before presenting a recommendation for human approval,
+verify that every product-specific premise is traceable to:
+- raw evidence;
+- accepted product memory; or
+- an explicitly labeled assumption.
+
+Human approval does not retroactively convert an unsupported
+premise into evidence.

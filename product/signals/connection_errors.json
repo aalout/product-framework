@@ -1,0 +1,65 @@
+{
+    "period": "last_60_days",
+    "population": "accounts_with_ad_connection_started",
+    "attempts": {
+      "small_agency": {
+        "accounts_started": 1041,
+        "completed": 579,
+        "failed_with_recorded_error": 91,
+        "abandoned_without_recorded_error": 371
+      },
+      "medium_agency": {
+        "accounts_started": 377,
+        "completed": 300,
+        "failed_with_recorded_error": 31,
+        "abandoned_without_recorded_error": 46
+      }
+    },
+    "errors_by_platform": {
+      "meta": {
+        "connection_starts": 892,
+        "accounts_with_recorded_error": 83,
+        "errors": {
+          "oauth_cancelled": 24,
+          "insufficient_permissions": 31,
+          "token_exchange_failed": 12,
+          "account_not_eligible": 9,
+          "unknown": 7
+        }
+      },
+      "google_ads": {
+        "connection_starts": 456,
+        "accounts_with_recorded_error": 32,
+        "errors": {
+          "oauth_cancelled": 13,
+          "insufficient_permissions": 8,
+          "token_exchange_failed": 6,
+          "account_not_eligible": 2,
+          "unknown": 3
+        }
+      },
+      "other": {
+        "connection_starts": 70,
+        "accounts_with_recorded_error": 7,
+        "errors": {
+          "oauth_cancelled": 2,
+          "insufficient_permissions": 2,
+          "token_exchange_failed": 1,
+          "account_not_eligible": 0,
+          "unknown": 2
+        }
+      }
+    },
+    "retry_behavior": {
+      "accounts_with_recorded_error": 122,
+      "retried_at_least_once": 71,
+      "eventually_completed": 49,
+      "did_not_complete": 73
+    },
+    "instrumentation_notes": [
+      "A recorded error requires an explicit integration error event.",
+      "Abandoned without recorded error does not prove that no technical problem occurred.",
+      "Client-side failures before the error event may be undercounted.",
+      "Configuration choices after OAuth are not separately instrumented."
+    ]
+  }

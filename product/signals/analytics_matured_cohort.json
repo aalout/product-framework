@@ -1,0 +1,53 @@
+{
+    "period": "accounts_created_31_to_60_days_ago",
+    "observation_window": "minimum_30_days_per_account",
+    "new_accounts": 960,
+    "activation_by_window": {
+      "within_7_days": 268,
+      "within_14_days": 291,
+      "within_30_days": 306
+    },
+    "funnel": {
+      "account_created": 960,
+      "workspace_created": 784,
+      "ad_connection_started": 698,
+      "ad_connection_completed": 441,
+      "campaign_created": 354,
+      "campaign_launched": 306
+    },
+    "segments": {
+      "small_agency": {
+        "accounts": 690,
+        "workspace_created": 555,
+        "ad_connection_started": 510,
+        "ad_connection_completed": 292,
+        "campaign_created": 221,
+        "campaign_launched": 190
+      },
+      "medium_agency": {
+        "accounts": 270,
+        "workspace_created": 229,
+        "ad_connection_started": 188,
+        "ad_connection_completed": 149,
+        "campaign_created": 133,
+        "campaign_launched": 116
+      }
+    },
+    "late_completion": {
+      "small_agency": {
+        "connection_started_but_not_completed_within_7_days": 238,
+        "completed_connection_between_day_8_and_day_30": 20,
+        "median_days_to_late_completion": 11
+      },
+      "medium_agency": {
+        "connection_started_but_not_completed_within_7_days": 46,
+        "completed_connection_between_day_8_and_day_30": 7,
+        "median_days_to_late_completion": 9
+      }
+    },
+    "notes": [
+      "The cohort is fully matured for the 30-day activation window.",
+      "Late completion exists but represents a minority of accounts that initially fail to complete connection.",
+      "No causal interpretation is included in this export."
+    ]
+  }

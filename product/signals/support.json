@@ -1,0 +1,99 @@
+{
+    "period": "last_90_days",
+    "scope": "support conversations opened within 30 days of account signup",
+    "total_threads": 126,
+    "threads_by_onboarding_step": {
+      "workspace": 11,
+      "connect": 37,
+      "configure": 42,
+      "campaign_create": 14,
+      "launch": 8,
+      "other": 14
+    },
+    "themes": [
+      {
+        "theme": "configuration_choice_uncertainty",
+        "threads": 31,
+        "examples": [
+          {
+            "account": "A-1042",
+            "segment": "small_agency",
+            "platform": "meta",
+            "summary": "User asked which Business Manager and ad account should be selected for an existing client.",
+            "resolution": "Support explained the recommended account configuration. User completed connection later the same day."
+          },
+          {
+            "account": "A-1188",
+            "segment": "small_agency",
+            "platform": "meta",
+            "summary": "User was unsure whether both page and ad-account permissions were required.",
+            "resolution": "Support sent configuration instructions. Connection completed."
+          }
+        ]
+      },
+      {
+        "theme": "client_account_risk",
+        "threads": 18,
+        "examples": [
+          {
+            "account": "A-1091",
+            "segment": "small_agency",
+            "platform": "meta",
+            "summary": "User asked whether connecting GrowthOS could pause, edit, or duplicate campaigns already running in the client account.",
+            "resolution": "Support explained that connection alone does not modify existing campaigns. User continued setup."
+          }
+        ]
+      },
+      {
+        "theme": "insufficient_client_access",
+        "threads": 21,
+        "examples": [
+          {
+            "account": "A-1214",
+            "segment": "small_agency",
+            "platform": "meta",
+            "summary": "Marketer did not have admin access to the client's Business Manager and needed the client to grant additional permissions.",
+            "resolution": "Waiting for client. No connection completion recorded at thread close."
+          }
+        ]
+      },
+      {
+        "theme": "technical_integration_error",
+        "threads": 15,
+        "examples": [
+          {
+            "account": "A-1167",
+            "segment": "small_agency",
+            "platform": "meta",
+            "summary": "OAuth returned an error after account selection.",
+            "resolution": "Retry succeeded after reconnecting."
+          }
+        ]
+      },
+      {
+        "theme": "import_vs_create_workflow",
+        "threads": 12,
+        "examples": [
+          {
+            "account": "A-1251",
+            "segment": "small_agency",
+            "platform": "google_ads",
+            "summary": "User expected existing campaigns to appear automatically after connection and did not know whether to import or recreate them.",
+            "resolution": "Support explained current workflow. User did not launch during the support thread."
+          }
+        ]
+      }
+    ],
+    "resolution_summary": {
+      "resolved_with_information_only": 39,
+      "resolved_after_technical_action": 12,
+      "required_client_or_third_party_action": 19,
+      "unresolved_or_unknown": 56
+    },
+    "limitations": [
+      "Themes are not mutually exclusive; one thread may appear in more than one theme.",
+      "Users who contact support may differ systematically from users who silently abandon.",
+      "A support resolution followed by activation does not establish that the support response caused activation.",
+      "Support tagging was performed retrospectively from conversation summaries."
+    ]
+  }

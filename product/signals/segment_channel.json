@@ -1,0 +1,56 @@
+{
+    "period": "last_60_days",
+    "segment_assignment": {
+      "method": "company_size_selected_during_signup",
+      "small_agency": "3-10 employees",
+      "medium_agency": "11-30 employees",
+      "available_at_connection_start": true,
+      "verification": "self_reported_not_verified"
+    },
+    "accounts_by_channel": {
+      "small_agency": {
+        "self_serve": {
+          "accounts": 1090,
+          "connection_started": 793,
+          "connection_completed": 421,
+          "campaign_launched": 267
+        },
+        "sales_assisted": {
+          "accounts": 310,
+          "connection_started": 248,
+          "connection_completed": 189,
+          "campaign_launched": 145
+        }
+      },
+      "medium_agency": {
+        "self_serve": {
+          "accounts": 210,
+          "connection_started": 139,
+          "connection_completed": 91,
+          "campaign_launched": 67
+        },
+        "sales_assisted": {
+          "accounts": 330,
+          "connection_started": 238,
+          "connection_completed": 209,
+          "campaign_launched": 176
+        }
+      }
+    },
+    "onboarding_assistance": {
+      "definition": "sales or customer-success interaction before connection completion",
+      "small_agency": {
+        "self_serve": 0.04,
+        "sales_assisted": 0.71
+      },
+      "medium_agency": {
+        "self_serve": 0.06,
+        "sales_assisted": 0.84
+      }
+    },
+    "notes": [
+      "Medium agencies are substantially more likely to enter through the sales-assisted channel.",
+      "Sales-assisted is an acquisition/onboarding channel and does not necessarily mean the connection was completed by an employee.",
+      "No causal adjustment has been performed."
+    ]
+  }

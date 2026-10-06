@@ -1,0 +1,47 @@
+{
+    "period": "last_30_days",
+    "population": "accounts_created_without_workspace_created",
+    "accounts": 190,
+    "signup_source": {
+      "paid_search": 72,
+      "organic": 43,
+      "referral": 21,
+      "content": 18,
+      "sales": 11,
+      "unknown": 25
+    },
+    "email_domain": {
+      "business": 81,
+      "free_consumer": 96,
+      "unknown": 13
+    },
+    "self_reported_company_type": {
+      "performance_marketing_agency": 74,
+      "freelancer": 41,
+      "in_house_marketing": 28,
+      "other": 19,
+      "unknown": 28
+    },
+    "self_reported_team_size": {
+      "1_to_2": 53,
+      "3_to_10": 61,
+      "11_to_30": 13,
+      "31_plus": 8,
+      "unknown": 55
+    },
+    "sessions_after_signup": {
+      "one_session_only": 131,
+      "returned_within_7_days": 39,
+      "returned_after_7_days": 20
+    },
+    "estimated_icp_fit": {
+      "clear_fit": 58,
+      "clear_non_fit": 79,
+      "unknown": 53
+    },
+    "notes": [
+      "ICP fit is estimated from self-reported company type and team size.",
+      "Unknown accounts should not be classified as non-ICP.",
+      "No interviews have been conducted specifically with pre-workspace drop-offs."
+    ]
+  }
